@@ -1,6 +1,10 @@
 # LoginSystem
 Login System in c++
 
+Default Credentials.
+Password : SharonIV
+PIN : 6969
+
 Made a login system in c++ 
 its pretty cool
 and wont let you login until you put right credentails. 
