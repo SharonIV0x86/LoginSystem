@@ -2,7 +2,7 @@
 #include <string>
 #include <conio.h>
 #include <windows.h>
-//using namespace std;
+using namespace std;
 char password_attempts, pin_attempts = 1;
 char password_tries = 4;
 // The password is: SharonIV
