@@ -56,17 +56,36 @@ public:
 
         std::cout << "\n\n\tEnter Your NickName ";
         std::getline(std::cin, NickName);
+        if (NickName.empty())
+        {
 
+            clear_screen_cross_platform();
+            std::cout << "\n\n\tNickName field cannot be empty! ";
+            takeCREDS();
+        }
         std::cout << "\n\n\tEnter the password: ";
         std::getline(cin, password_main_input);
+        if (password_main_input.empty())
+        {
 
+            clear_screen_cross_platform();
+
+            std::cout << "\n\n\tPASSWORD field cannot be empty! ";
+            takeCREDS();
+        }
         std::cout << "\n\n\tChecking password please wait....";
 
         delay_only_delay();
 
         std::cout << "\n\n\tEnter the PIN: ";
         std::getline(std::cin, pin_main_input);
-
+        if (pin_main_input.empty())
+        {
+            
+            clear_screen_cross_platform();
+            std::cout << "\n\n\tPIN field cannot be empty! ";
+            takeCREDS();
+        }
         std::cout << "\n\n\tChecking PIN please wait...";
         delay_only_delay();
 
